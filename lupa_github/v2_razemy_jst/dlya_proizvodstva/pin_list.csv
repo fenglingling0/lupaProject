@@ -1,0 +1,34 @@
+﻿Пин модуля;GPIO;Цепь;Назначение
+3;EN;EN;Сброс (SW1, C12, R4)
+27;IO0;BOOT;Кнопка BOOT (SW2), strap
+13 / 14;IO19 / IO20;USB_D- / USB_D+;USB-C, нативный USB
+25;IO48;CAM_D2;DVP данные
+24;IO47;CAM_D1;DVP данные
+23;IO21;CAM_D3;DVP данные
+22;IO14;CAM_D0;DVP данные
+21;IO13;CAM_D4;DVP данные
+20;IO12;CAM_PCLK;DVP pixel clock
+19;IO11;CAM_D5;DVP данные
+18;IO10;CAM_XCLK;Тактовая камеры (через R16)
+17;IO9;CAM_D6;DVP данные
+15;IO3;CAM_D7;DVP данные. IO3 — strap выбора источника JTAG, на загрузку не влияет, пока JTAG не используется
+12;IO8;CAM_HSYNC;DVP
+10;IO17;CAM_VSYNC;DVP
+8;IO15;SD_CS;microSD (SPI)
+7;IO7;SD_MOSI;microSD (SPI)
+6;IO6;SD_SCK;microSD (SPI)
+5;IO5;SD_MISO;microSD (SPI)
+4;IO4;TALK_L_N;Светодиоды D2+D3 (активный низкий)
+31;IO38;SCL;I²C: камера SCCB, QMI8658B, BQ21061
+32;IO39;SDA;I²C
+38;IO2;TRIGGER_N;Кнопка спуска. RTC-GPIO: будит из deep sleep
+39;IO1;IMU_INT1;Прерывание акселерометра. RTC-GPIO: будит из deep sleep
+33;IO40;MIC_DATA;PDM-микрофон, данные (R27 — подтяжка вниз)
+34;IO41;MIC_PDM_CLK;PDM-микрофон, такт
+35;IO42;I2S_BCLK;MAX98357A
+36;RXD0 / IO44;I2S_LRCLK;MAX98357A (консоль UART0 не использовать, лог идёт через USB)
+37;TXD0 / IO43;I2S_DIN;MAX98357A
+11;IO18;BAT_MON_EN;Включение делителя батареи (TMUX1101)
+9;IO16;BAT_SENSE;Измерение батареи. IO16 — ADC2: при работающем Wi-Fi ADC2 недоступен, учитывать в прошивке
+16 / 26;IO46 / IO45;—;Не подключены (strap-пины)
+28–30;IO35–37;—;Заняты Octal PSRAM, не подключены
