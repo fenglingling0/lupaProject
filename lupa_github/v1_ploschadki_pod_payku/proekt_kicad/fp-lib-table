@@ -1,0 +1,3 @@
+(fp_lib_table
+	(lib (name "Lupa")(type "KiCad")(uri "${KIPRJMOD}/Lupa.pretty")(options "")(descr ""))
+)
